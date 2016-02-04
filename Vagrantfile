@@ -68,6 +68,7 @@ Vagrant.configure(2) do |config|
     sudo yes | yum install gem createrepo git epel-release -y
     sudo gem install puppet -v 3.8.4
     sudo cp /vagrant_data/jitsi.repo /etc/yum.repos.d/jitsi.repo
+    sudo createrepo /vagrant_data/packages
     sudo yum clean all
     sudo git clone https://github.com/jfryman/puppet-nginx.git /vagrant_data/puppet/modules/nginx
     sudo git clone https://github.com/puppetlabs/puppetlabs-concat.git /vagrant_data/puppet/modules/concat
