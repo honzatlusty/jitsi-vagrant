@@ -1,0 +1,6 @@
+[local]
+name=Jitsi local repo
+baseurl=file:///vagrant_data/packages
+enabled=1
+gpgcheck=0
+
