@@ -1,0 +1,27 @@
+#profile_jitsi::nat_harvester_local_address: "%{::ipaddress_eth0}"
+#profile_jitsi::nat_harvester_public_address: '136.243.68.9'
+#profile_jitsi::tcp_harvester_port: '4443'
+profile_jitsi::jitsi_vhost_server_name: '192.168.33.11'
+profile_jitsi::videobridge_password: 'ghjkgHGHJG7hh5'
+profile_jitsi::jicofo_password: '8kjhHLKH5kjfGH'
+profile_jitsi::bosh: '//192.168.33.11/http-bind'
+profile_jitsi::user_name: 'focus'
+profile_jitsi::user_password: '3HGFhjff3gas'
+profile_jitsi::country: 'BE'
+profile_jitsi::company: 'Company'
+profile_jitsi::jitsi_domain: '192.168.33.11'
+profile_jitsi::prosody_interface: '192.168.33.11'
+#profile_jitsi::hypervisor_public_interface: 'br1'
+
+profile_jitsi::jicofo_configuration:
+  JICOFO_DOMAIN: 192.168.33.11
+  JICOFO_SECRET: 8kjhHLKH5kjfGH
+  JICOFO_USER_DOMAIN: auth.192.168.33.11
+  JICOFO_USER_NAME: focus
+  JICOFO_USER_PASSWORD: 3HGFhjff3gas
+
+profile_jitsi::jitsi_videobridge_configuration:
+  JITSI_VIDEOBRIDGE_HOST: 192.168.33.11
+  JITSI_VIDEOBRIDGE_DOMAIN: 192.168.33.11
+  JITSI_VIDEOBRIDGE_PORT: 5347
+  JITSI_VIDEOBRIDGE_SECRET: ghjkgHGHJG7hh5
