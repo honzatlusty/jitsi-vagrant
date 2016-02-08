@@ -1,0 +1,12 @@
+:backends: yaml
+:yaml:
+  # on *nix:
+  :datadir: "/vagrant_data/puppet/hieradata/"
+  # on Windows:
+:hierarchy:
+  - "nodes/%{::trusted.certname}"
+  - "common"
+:logger: console
+:merge_behavior: native
+:deep_merge_options: {}
+

@@ -75,6 +75,8 @@ Vagrant.configure(2) do |config|
     sudo git clone https://github.com/puppetlabs/puppetlabs-stdlib.git /vagrant_data/puppet/modules/stdlib
     sudo git clone https://github.com/honzatlusty/puppet-jitsi.git /vagrant_data/puppet/modules/jitsi
     sudo git clone https://github.com/honzatlusty/profile_jitsi.git /vagrant_data/puppet/modules/profile_jitsi
+    sudo mkdir /etc/puppet
+    sudo /vagrant_data/hiera.yaml /etc/puppet/
     sudo /usr/local/bin/puppet apply /vagrant_data/puppet/site.pp --modulepath=/vagrant_data/puppet/modules
    SHELL
 end
